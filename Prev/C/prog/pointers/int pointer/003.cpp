@@ -1,0 +1,77 @@
+////on icrement the address value it make it jump to next loaction in that datatyeps store.
+#include<stdio.h>
+main()
+{
+	int i,j,mat[3][4]={1,2,3,4,5,6,7,8,9,10,11,12};
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",mat+i);
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",*(mat+i));
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",mat[i]);
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<4;j++)
+		{
+			printf("%u\t",*(mat+i)+j);
+		}
+		printf("\n");
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",**(mat+i));
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",*mat[i]);
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<4;j++)
+		{
+			printf("%u\t",*(*(mat+i)+j));
+		}
+		printf("\n");
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<4;j++)
+		{
+			printf("%u\t",mat[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",*(mat+i));
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",mat[i]);
+	}
+	printf("\n\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<4;j++)
+		{
+			printf("%u\t",*(mat[i]+j));
+		}
+		printf("\n");
+	}
+	
+}

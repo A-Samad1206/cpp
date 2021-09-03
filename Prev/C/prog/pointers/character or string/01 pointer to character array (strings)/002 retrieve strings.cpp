@@ -1,0 +1,61 @@
+#include<stdio.h>
+main()
+{
+	char str[]={"ABDUS SAMAD"};
+	char *ps=str;
+	int i;
+	printf("%lu\n",sizeof(str));
+	//str[0]='m';
+	//01
+	printf("01-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",ps+i);
+	}
+	printf("02-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",i+ps);
+	}
+	printf("\n555555%s\n",ps);//still it is not modified like ps++;
+	printf("03-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",&ps[i]);
+	}
+	printf("04-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",&i[ps]);
+	}
+	printf("05-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",ps++);
+	}
+	printf("06-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",&str[i]);
+	}
+	printf("07-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",&i[str]);
+	}
+	printf("08-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",str+i);
+	}
+	printf("09-------------\n");
+	for(i=0;str[i]!='\0';i++)
+	{
+		printf("%s\n",i+str);
+	}
+	/*printf("11-------------\n");
+	for(i=0;ps[i]!='\0';i++)
+	{
+		printf("%s\n",ps++);
+	}*/
+}

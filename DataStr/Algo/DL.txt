@@ -1,0 +1,9 @@
+Bubble
+Insertion
+Selection
+Merge
+Quick
+Heap
+Counting
+Radix/Bucket
+Shell

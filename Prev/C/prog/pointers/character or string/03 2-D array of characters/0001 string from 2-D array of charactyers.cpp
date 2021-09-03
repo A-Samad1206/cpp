@@ -1,0 +1,50 @@
+#include<stdio.h>
+main()
+{
+	char name[6][20]={"Abdus Samad","Ahad","Shuaib"};
+	int i,j;
+	for(i=0;i<3;i++)
+	{
+		printf("%u\n",*(name+i));
+	}
+	for(i=0;i<120/*120=6*20*/;i++)
+	{
+		printf("%c",*(*name+i));
+	}
+	for(i=0;i<6;i++)
+	{
+		for(j=0;name[i][j]!='\0';j++)//if want matrix then j<column;
+		{	
+	   		printf("%u\t",*(name+i)+j);
+    	}
+    	printf("\n");
+	}
+	printf("\n01---------------\n");
+	for(i=0;i<6;i++)
+	{
+		for(j=0;name[i][j]!='\0';j++)
+		{	
+	   		printf("%s\n",*(name+i)+j);
+    	}
+    	printf("\n");
+	}
+
+	printf("03---------------\n");
+	for(i=0;i<6;i++)
+	{
+		for(j=0;name[i][j]!='\0';j++)
+		{	
+	   		printf("%s\n",&name[i][j]);
+    	}
+    	printf("\n");
+	}
+	printf("04---------------\n");
+	for(i=0;i<6;i++)
+	{
+		for(j=0;name[i][j]!='\0';j++)
+		{	
+	   		printf("%s\n",(name[i]+j));
+    	}
+    	printf("\n");
+	}
+}

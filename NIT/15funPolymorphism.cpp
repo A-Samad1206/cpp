@@ -1,0 +1,3 @@
+/*
+    Fun with default support fun polymorphism.
+*/
